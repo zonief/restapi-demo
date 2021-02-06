@@ -13,6 +13,25 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>restapi</name>
 	<description>Demo project for Spring Boot</description>
+
+	<repositories>
+		<repository>
+			<id>test-feed</id>
+			<url>https://pkgs.dev.azure.com/yosachot/test/_packaging/test-feed/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>test-feed</id>
+			<url>https://pkgs.dev.azure.com/yosachot/test/_packaging/test-feed/maven/v1</url>
+		</repository>
+	</distributionManagement>
 	<properties>
 		<java.version>15</java.version>
 	</properties>
